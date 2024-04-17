@@ -1,2 +1,5 @@
 pytesseract
 pillow
+PyMuPDF
+Cython
+setuptools

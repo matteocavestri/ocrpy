@@ -1,1 +1,7 @@
 venv
+input
+ocr_output
+
+build
+*.c
+*.so
