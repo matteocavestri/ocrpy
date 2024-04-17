@@ -60,3 +60,25 @@ sudo dnf install python3 python3-cython tesseract
    ```
 
 3. Run the command `python3 run_cython.py`
+
+### How to use it --> **Docker**
+
+1. Create the container
+
+   ```bash
+   docker build -t ocrpy .
+   ```
+
+2. Create the input-output directory
+
+   ```bash
+   mkdir -p $HOME/ocrpy/input $HOME/ocrpy/output
+   ```
+
+3. Put your files inside input directory
+
+4. Start the container using docker compose
+
+   ```bash
+   docker compose up
+   ```

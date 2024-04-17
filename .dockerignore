@@ -1,0 +1,10 @@
+.gitignore
+Dockerfile
+compose.yaml
+README.md
+LICENSE
+ocrpy.pyx
+run_cython.py
+setup.py
+input
+ocr_output

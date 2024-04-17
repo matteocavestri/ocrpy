@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  ocr-app:
+    image: ocrpy # Make sure the image is built with this tag or modify as needed
+    container_name: ocrpy
+    volumes:
+      - $HOME/ocrpy/input:/app/input # Mount the input folder from the host to the container
+      - $HOME/ocrpy/output:/app/ocr_output # Mount the output folder from the host to the container
+    environment:
+      - LANG=C.UTF-8 # Setting the locale, useful for pytesseract
+      - PYTHONUNBUFFERED=1 # See python buffer in real time
